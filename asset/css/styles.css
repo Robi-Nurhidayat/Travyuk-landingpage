@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.header {
+  padding: 0 6.4rem;
+}
+.header .header__navigasi {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.6rem;
+}
+.header .header__navigasi .header__logo-box .logo {
+  font-size: 3.8rem;
+}/*# sourceMappingURL=styles.css.map */
