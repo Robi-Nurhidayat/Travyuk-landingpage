@@ -1,3 +1,5 @@
+/* main font weight*/
+/*----------*/
 *,
 *::after,
 *::before {
@@ -13,6 +15,7 @@ html {
 .header {
   padding: 0 6.4rem;
   padding-top: 3.6rem;
+  font-family: "Poppins", sans-serif;
   background-image: linear-gradient(to right, rgba(13, 13, 32, 0.3), rgba(13, 13, 32, 0.3)), url("../img/bg-hero.png");
   height: 90vh;
   background-repeat: no-repeat;
@@ -22,7 +25,48 @@ html {
 .header .header__navigasi {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header .header__navigasi .header__logo-box .logo {
   font-size: 3.8rem;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+}
+.header .header__navigasi .nav ul {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__navigasi .nav ul li {
+  list-style: none;
+}
+.header .header__navigasi .nav ul li .link-item:link,
+.header .header__navigasi .nav ul li .link-item:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #bbbdc3;
+  display: inline-block;
+  position: relative;
+}
+.header .header__navigasi .nav ul li .link-item::after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header .header__navigasi .nav ul li .link-item:active {
+  color: #fff;
+}
+.header .header__navigasi .nav ul li .link-item:hover {
+  color: #fff;
+}
+.header .header__navigasi .nav ul li .link-item:hover::after {
+  border-bottom: 3px solid #fff;
 }/*# sourceMappingURL=styles.css.map */
