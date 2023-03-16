@@ -12,11 +12,16 @@ html {
 
 .header {
   padding: 0 6.4rem;
+  padding-top: 3.6rem;
+  background-image: linear-gradient(to right, rgba(13, 13, 32, 0.3), rgba(13, 13, 32, 0.3)), url("../img/bg-hero.png");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 .header .header__navigasi {
   display: flex;
   justify-content: space-between;
-  margin-top: 3.6rem;
 }
 .header .header__navigasi .header__logo-box .logo {
   font-size: 3.8rem;
